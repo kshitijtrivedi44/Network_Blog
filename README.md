@@ -41,3 +41,14 @@ The discovered services are analyzed using vulnerability scanners and public vul
 Analysis and Reporting
 
 The final step is to analyze the findings, understand their security impact, and recommend appropriate mitigation measures. A good report not only lists vulnerabilities but also explains why they matter and how they can be addressed.
+
+
+3. VA vs PT : https://qualysec.com/what-is-the-difference-between-va-and-pt/
+
+| Vulnerability Assessment                                | Penetration Testing                                                                              |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Identifies security weaknesses in a network.            | Tests whether identified weaknesses can actually be exploited.                                   |
+| Mainly focuses on discovery and analysis.               | Focuses on validating the real-world impact of vulnerabilities.                                  |
+| Usually relies on automated tools.                      | Involves a combination of automated tools and manual testing.                                    |
+| Produces a list of vulnerabilities with their severity. | Demonstrates the practical impact and provides proof of exploitation (within the defined scope). |
+
