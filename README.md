@@ -71,4 +71,61 @@ Understanding the Command
 
 The command uses the -sn option, also known as a Ping Scan. Instead of scanning ports, Nmap simply checks which devices on the specified subnet are active and responding. This makes it a quick and efficient way to discover hosts before moving on to more detailed scans.
 
+Obersvations:
+
+The scan successfully identified three active hosts on the target network. These included the default gateway (router) and two connected devices. Since the -sn option only performs host discovery, no information about open ports or running services was collected at this stage.
+
+The discovered hosts provide the starting point for the next phase of the assessment, where individual systems will be scanned for open ports and running services.
+
+
+Real Life case study: Mirai botnet
+Reference link: https://www.cisecurity.org/insights/blog/the-mirai-botnet-threats-and-mitigations
+                  https://www.youtube.com/watch?v=Lo40iZDrAQQ
+
+The Mirai Botnet, first identified in 2016, is one of the most significant examples of how attackers leverage host discovery and service enumeration to compromise networked devices at scale. Mirai primarily targeted Internet of Things (IoT) devices such as IP cameras, routers, and digital video recorders (DVRs) that were accessible over the internet.
+
+The malware continuously scanned public IP address ranges to identify live hosts exposing remote management services, particularly Telnet (TCP Port 23) and SSH (TCP Port 22). Once a responsive device was discovered, Mirai attempted to authenticate using a predefined list of common default usernames and passwords. Devices with weak or unchanged credentials were successfully compromised and incorporated into a botnet under the attacker's control.
+
+The compromised devices were later orchestrated to launch large-scale Distributed Denial-of-Service (DDoS) attacks. One of the most notable incidents targeted Dyn, a major DNS service provider, disrupting access to popular online platforms such as Twitter, Netflix, Reddit, GitHub, and Spotify for several hours.
+
+Attack flow: Image
+
+Mirai Botnet Mitigations:
+
+Segment your network – Ensure that all IoT devices are on a separate network from systems critical for daily operations.
+
+Update IoT devices – Always keep IoT devices up to date to ensure there is less of a chance for infection.
+
+Use and maintain anti-virus software – Anti-virus software recognizes and protects your computer against most known viruses. It is important to keep your anti-virus software up-to-date.
+
+
+
+5. Port Scanning and Service Enumeration 
+Reference: https://nmap.org/book/port-scanning-tutorial.html
+            https://www.geeksforgeeks.org/ethical-hacking/port-scanning-techniques-by-using-nmap/
+
+Once the active hosts were identified, the next step was to determine which ports were open and what services were running on those ports. Open ports represent the entry points through which systems communicate over a network. Identifying these ports helps security professionals understand the attack surface and identify services that may require further investigation.
+
+Objective
+
+To identify open ports on the target host and determine the services and software versions running on those ports.
+
+Commands Executed
+1. TCP SYN Scan :
+
+
+
+
+
+
+6. Vulnerability detection using nuclei
+
+7. Research based- Vulnerability Analysis
+
+8. APT perspective of the steps performed
+
+9. Security recommendations & best practices
+
+10. 
+   
 
