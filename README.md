@@ -52,3 +52,23 @@ The final step is to analyze the findings, understand their security impact, and
 | Usually relies on automated tools.                      | Involves a combination of automated tools and manual testing.                                    |
 | Produces a list of vulnerabilities with their severity. | Demonstrates the practical impact and provides proof of exploitation (within the defined scope). |
 
+
+4. Discovering Active Hosts in the Network using Nmap
+Objective
+
+The first step in any network security assessment is to identify which devices are currently active on the target network. This process, known as Host Discovery, helps security professionals create an inventory of live systems before performing detailed scans. Without knowing which hosts are available, it is not possible to accurately assess the network's security.
+
+In this experiment, Nmap (Network Mapper) was used to discover active hosts within the target network.
+
+Tool Used
+Tool: Nmap
+Version: (Mention the version installed on your system, e.g., 7.97)
+Operating System: (Kali Linux/macOS)
+
+Command Used: 
+
+Understanding the Command
+
+The command uses the -sn option, also known as a Ping Scan. Instead of scanning ports, Nmap simply checks which devices on the specified subnet are active and responding. This makes it a quick and efficient way to discover hosts before moving on to more detailed scans.
+
+
